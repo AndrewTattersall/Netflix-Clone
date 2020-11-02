@@ -1,0 +1,67 @@
+
+//Variables
+$color-primary: #E50914;
+$color-secondary: rgb(48, 48, 48);
+
+//Utilities
+.u-margin-top-small {margin-top: 2.1rem;}
+.display-block {display: block;}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$bp-largest: 75em; //1200px 1200/16 = 75
+$bp-large: 68.75em; //1100px 
+$bp-medium: 59.37em; //950px 
+$bp-small: 37.5em; //600px 
+$bp-smallest: 31.25em; //500px 
+$bp-extrasmall: 21.87em; //350px
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1 rem = 10px, 10px/16px = 62.5%
+  color: white;
+  font-family: Helvetica, sans-serif;
+ background-color: black;
+
+ @media only screen and (max-width: $bp-large){
+  font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-small){
+    text-align: center;
+    }
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+
+  @media only screen and (max-width: $bp-large){
+    font-size: 5rem;
+      }
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 2.3rem;
+  }
+  
+  p {
+    font-size: 1.7rem;
+    margin-top: 2.1rem;
+    
+    @media only screen and (max-width: $bp-smallest){
+    margin-top: .5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    }
+  }
